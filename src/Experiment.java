@@ -13,7 +13,7 @@ public class Experiment {
 
             Graph g = generateRandomGraph(size);
 
-            // To prevent errors, we ensure node 0 exists to start the traversal
+
             runTraversals(g, 0);
         }
     }
@@ -24,7 +24,7 @@ public class Experiment {
             g.addVertex(new Vertex(i));
         }
 
-        // Add random edges 
+       // rand edges
         for (int i = 0; i < size * 1.5; i++) {
             g.addEdge(random.nextInt(size), random.nextInt(size));
         }
